@@ -1,0 +1,4 @@
+{
+    "command": "npm run test",
+    "working_directory": "/home/kavia/workspace/code-generation/notemaster-538-14ba47eb/notes_frontend_workspace/notes_frontend"
+}
