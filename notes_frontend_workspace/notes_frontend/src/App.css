@@ -19,12 +19,104 @@
 }
 
 [data-theme="dark"] {
-  --bg-primary: #1a1a1a;
-  --bg-secondary: #23272f;
-  --text-primary: #ffffff;
-  --text-secondary: #bdbdbd;
-  --border-color: #404040;
+  --bg-primary: #181a20;
+  --bg-secondary: #22232a;
+  --text-primary: #f4f4f5;
+  --text-secondary: #bfc7d5;
+  --border-color: #31343b;
+  --button-bg: #243355;
+  --button-text: #f4f4f5;
+  --btn-accent-bg: #288141;
+  --btn-accent-text: #fff;
+  --sidebar-width: 260px;
 }
+
+[data-theme="dark"] .note-editor,
+[data-theme="dark"] .auth-card {
+  background: var(--bg-secondary);
+  box-shadow: 0 2px 24px rgba(10,18,40,0.17);
+}
+
+[data-theme="dark"] .sidebar {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border-right: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .sidebar-item.selected,
+[data-theme="dark"] .sidebar-item:active,
+[data-theme="dark"] .sidebar-item:hover {
+  background: #26293b;
+}
+
+[data-theme="dark"] .sidebar-title {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .sidebar-snippet {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .main-content {
+  background: var(--bg-primary);
+}
+
+[data-theme="dark"] .note-content,
+[data-theme="dark"] .auth-card input {
+  background: #23272f;
+  color: #f4f4f5;
+  border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .note-title {
+  color: var(--text-primary);
+  border-bottom: 2px solid var(--kavia-primary);
+  background: transparent;
+}
+
+[data-theme="dark"] .btn-accent {
+  background: var(--btn-accent-bg);
+  color: var(--btn-accent-text);
+}
+[data-theme="dark"] .btn-accent:hover {
+  background: #19612e;
+}
+
+[data-theme="dark"] .btn-primary {
+  background: var(--button-bg);
+  color: var(--button-text);
+}
+[data-theme="dark"] .btn-primary:hover {
+  background: #3163a7;
+}
+
+[data-theme="dark"] .btn-delete {
+  background: #af2525;
+}
+[data-theme="dark"] .btn-delete:hover {
+  background: #e54141;
+  color: #fff;
+}
+
+[data-theme="dark"] .auth-card {
+  border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .auth-card input:focus {
+  border: 1.6px solid var(--kavia-primary);
+}
+
+[data-theme="dark"] .theme-toggle {
+  background: var(--button-bg);
+  color: var(--button-text);
+}
+[data-theme="dark"] .theme-toggle:focus-visible {
+  outline: 2px solid #66aaff;
+}
+[data-theme="dark"] .theme-toggle:hover {
+  background: #3e69a9;
+}
+
 
 body {
   background: var(--bg-primary);
